@@ -1,0 +1,24 @@
+body {
+  font-family: "Prompt";
+}
+code {
+  font-family: "Prompt";
+}
+
+table, th, td {
+  font-family: "Prompt";
+}
+
+.dropdown-menu {
+  min-width: 4rem;
+}
+
+.question {
+  width: 500px;
+  height: 500px;
+}
+
+.question-container {
+  width: 100%;
+  height: 100%;
+}
