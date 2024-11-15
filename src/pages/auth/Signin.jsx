@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 import { useSignIn } from 'react-auth-kit'
 import { useNavigate } from 'react-router-dom'
 import Preloader from "../../components/Preloader";
-import logo from '/assets/imgs/logo.png'
+import logo from '/assets/imgs/kanda_logo.png'
 import Swal from 'sweetalert2'
 import axios from 'axios'
 
@@ -63,7 +63,7 @@ export default function Signin() {
           <div className="login-logo">
             <a href="#">
               {/* <b>OT-</b>REQUEST */}
-              <img src={logo} width='40%' alt="" />
+              <img src={logo} width='60%' alt="" />
             </a>
           </div>
           <div  id="auth_bg" className="card">

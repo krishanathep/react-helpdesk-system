@@ -12,7 +12,7 @@ export default function Home() {
   const profile = useAuthUser();
 
   const getData = async () => {
-    await axios.get(import.meta.env.VITE_API_KEY +'/api/petty-cash')
+    await axios.get('http://129.200.6.52/laravel_auth_jwt_api_afd/public/api/petty-cash')
       .then((res)=>{
 
         const detpFilter = res.data.data.filter((f)=>f.dept===profile().dept)
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="container-fluid">
           <div className="row mb-2">
             <div className="col-sm-6">
-              <h1 className="m-0">DASHBOARD</h1>
+              <h1 className="m-0">แดชบอร์ด</h1>
             </div>
             <div className="col-sm-6">
               <ol className="breadcrumb float-sm-right">
@@ -65,10 +65,10 @@ export default function Home() {
               <div className="small-box bg-info">
                 <div className="inner">
                   <h3>{pettycashs}</h3>
-                  <p>เงินสดย่อย ทั้งหมด</p>
+                  <p>รายการแจ้งซ่อม</p>
                 </div>
                 <div className="icon">
-                <i className="fas fa-wallet"></i>
+                <i className="fas fa-tools"></i>
                 </div>
                 <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
               </div>
@@ -77,10 +77,10 @@ export default function Home() {
               <div className="small-box bg-primary">
                 <div className="inner">
                   <h3>{inprogress}</h3>
-                  <p>รอสั่งจ่ายเงิน</p>
+                  <p>In-Progress</p>
                 </div>
                 <div className="icon">
-                <i className="fas fa-clock"></i>
+                <i className="fas fa-cogs"></i>
                 </div>
                 <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
               </div>
@@ -89,10 +89,10 @@ export default function Home() {
               <div className="small-box bg-success">
                 <div className="inner">
                   <h3>{approverd}</h3>
-                  <p>จ่ายเงินสำเร็จ</p>
+                  <p>Sueecee</p>
                 </div>
                 <div className="icon">
-                <i className="fas fa-piggy-bank"></i>
+                <i className="fas fa-rocket"></i>
                 </div>
                 <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
               </div>
@@ -101,7 +101,7 @@ export default function Home() {
               <div className="small-box bg-danger">
                 <div className="inner">
                   <h3>{rejected}</h3>
-                  <p>ยกเลิกเอกสาร</p>
+                  <p>Rejected</p>
                 </div>
                 <div className="icon">
                 <i className="fas fa-exclamation-circle"></i>

@@ -27,13 +27,13 @@ export default function Sidebar() {
               <li className="nav-item">
                 <Link to="/" className="nav-link">
                   <i className="nav-icon fas fa-home"></i>
-                  <p>DASHBOARD</p>
+                  <p>แดชบอร์ด</p>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/pettycash" className="nav-link">
-                <i className="nav-icon fas fa-toolbox"></i>
-                  <p>HELP-DESK</p>
+                <Link to="/repair" className="nav-link">
+                <i className="nav-icon fas fa-tools"></i>
+                  <p>แจ้งซ่อม</p>
                 </Link>
               </li>
               {/* <li className="nav-header">ADMIN MENU</li>
